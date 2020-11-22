@@ -22,7 +22,9 @@ Tag: backtracking, hashmap, trie
 
 #### 1583. Count Unhappy Friends (new)
 
-#### 1095.	Find in Mountain Array (new)
+#### 1095.	Find in Mountain Array (ok)
+Tag: Binary Search
+还是有些注意点的一道题
 
 #### 924. Minimize Malware Spread (new)
 
