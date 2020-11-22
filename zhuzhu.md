@@ -6,7 +6,7 @@
 
 ### 1558. Minimum Numbers of Function Calls to Make Target Array
 
-### 1530. Number of Good Leaf Nodes Pairs
+### 1530. Number of Good Leaf Nodes Pairs (ok)
 
 ### 1534.Number of Subarrays With Odd Sum (ok)
 
