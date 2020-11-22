@@ -26,7 +26,11 @@ Tag: backtracking, hashmap, trie
 
 #### 924. Minimize Malware Spread (new)
 
-#### 1429.	First Unique Number (new)
+#### 1429.	First Unique Number (ok)
+
+Tag: Hash Table, Design
+
+非常类似于LRU cache
 
 #### 296. Best Meeting Point (new)
 
