@@ -14,8 +14,6 @@
 
 ## 11.22
 ### new
-#### 1558. Minimum Numbers of Function Calls to Make Target Array (new)
-
 #### 425. Word Squares (ok)
 
 Tag: backtracking, hashmap, trie
