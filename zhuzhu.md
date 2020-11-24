@@ -31,10 +31,10 @@ Tag: Hash Table, Design
 ## 11.23
 
 #### 856. Score of Parentheses (ok)
-Tag: Stack<\br>
-可以对照这Decode string一起来做。<\br>
-when see '(', push 0 into the s<\br>
-when see ')', pop the current value of '(...)' and add the value to the previous '()'<\br>
+Tag: Stack<br>
+可以对照这Decode string一起来做。<br>
+when see '(', push 0 into the s<br>
+when see ')', pop the current value of '(...)' and add the value to the previous '()'<br>
 
 #### 1583. Count Unhappy Friends (new)
 
