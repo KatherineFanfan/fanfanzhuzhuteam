@@ -35,6 +35,10 @@ Tag: Stack<br>
 可以对照这Decode string一起来做。<br>
 when see '(', push 0 into the s<br>
 when see ')', pop the current value of '(...)' and add the value to the previous '()'<br>
+
+#### 1249. Minimum Remove to Make Valid Parentheses
+
+#### 1614. Maximum Nesting Depth of the Parentheses
 ### old
 #### 723. Candy Crush (old)
 Crushing Step:<br>
@@ -55,7 +59,14 @@ As the read head iterates through the column in reverse order, when the read hea
                     board[wr--][j] = 0;
                 }
             }
+            
 
+#### 2. Add Two Numbers
+
+#### 445. Add Two Numbers II
+
+## 11.24
+### new
 #### 1583. Count Unhappy Friends (new)
 
 #### 924. Minimize Malware Spread (new)
