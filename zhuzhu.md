@@ -37,8 +37,18 @@ when see '(', push 0 into the s<br>
 when see ')', pop the current value of '(...)' and add the value to the previous '()'<br>
 
 #### 1249. Minimum Remove to Make Valid Parentheses
+Tag: Stack<br>
+Solution1: Stack(明天可以再做一下)<br>
+// remove all invalid ')' <br>
+when see '(', push i into the st<br>
+when see ')', 1) st.empty() -> s.erase(s.begin() + i); i--; 2) st.pop();<br>
+// remove all leftmost invalid '('<br>
+while (!st.empty()) s.erase(s.begin() + st.top()); st.pop();<br>
+
+Solution2: 明天整理一下思路。可以在面试的时候说得清楚一些<br>
 
 #### 1614. Maximum Nesting Depth of the Parentheses
+Tag: String<br>
 ### old
 #### 723. Candy Crush (old)
 Crushing Step:<br>
@@ -61,9 +71,6 @@ As the read head iterates through the column in reverse order, when the read hea
             }
             
 
-#### 2. Add Two Numbers
-
-#### 445. Add Two Numbers II
 
 ## 11.24
 ### new
@@ -75,10 +82,16 @@ As the read head iterates through the column in reverse order, when the read hea
 
 #### 1300. Sum of Mutated Array Closest to Target (new)
 
+#### 1111. Maximum Nesting Depth of Two Valid Parentheses Strings
+
+
 ### old
 
 #### 394. Decode String
 
+#### 2. Add Two Numbers
+
+#### 445. Add Two Numbers II
 
 
 
