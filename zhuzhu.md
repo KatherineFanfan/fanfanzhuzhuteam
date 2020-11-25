@@ -74,13 +74,6 @@ As the read head iterates through the column in reverse order, when the read hea
 
 ## 11.24
 ### new
-#### 1583. Count Unhappy Friends (new)
-
-#### 924. Minimize Malware Spread (new)
-
-#### 296. Best Meeting Point (new)
-
-#### 1300. Sum of Mutated Array Closest to Target (new)
 
 #### 1111. Maximum Nesting Depth of Two Valid Parentheses Strings (ok)
 Tag: Greedy, String<br>
@@ -92,6 +85,10 @@ Tag: Tree, DFS, BFS
 Tag: Map, Design, lined list<br>
 并不觉得是easy难度的题目。。。design的题目都好难啊。
 
+#### 1008. Construct Binary Search Tree from Preorder Traversal (ok)
+用binary search tree的性质做。
+
+
 ### old
 
 #### 394. Decode String (ok)
@@ -102,9 +99,13 @@ char: cur += s[i]; <br>
 [: numberStack.push(num); stringStack.push(cur); cur.clear(); num = 0; <br>
 ]: adds = cur; time = numberStack.top(); numberStack.pop(); stringStack.top() = stringStack.top() + time * adds; cur = stringStack.top(); stringStack.pop();<br>
 
-#### 2. Add Two Numbers
+#### 2. Add Two Numbers (ok)
 
-#### 445. Add Two Numbers II
+#### 445. Add Two Numbers II (ok)
+Tag: Linked list<br>
+这道题是三道题的综合。reverse linked list, add strings, add two numbers<br>
+Solution 1: reverse input + construct output by adding to front<br>
+Solution 2: do not reverse the input. 1. sum the corresponding positions and build and output. 2. take care about the carry. 
 
 ### 128. Longest Consecutive Sequence (ok)
 思路：剪枝方式（!set.count(*it - 1))进行判断。
@@ -113,14 +114,6 @@ char: cur += s[i]; <br>
 思路：stack
 #### 1209. Remove All Adjacent Duplicates in String II (ok)
 思路：运用count来计数到现在为止有多少相同的字母了。然后进行删除。
-
-#### 116. Populating Next Right Pointers in Each Node
-
-#### 117. Populating Next Right Pointers in Each Node II
-
-#### 100. Same Tree
-
-#### 572. Subtree of Another Tree
 
 #### 98. Validate Binary Search Tree (ok)
 Solution 1: inorder traversal 然后判断array是不是从小到大排序的<br>
@@ -134,8 +127,33 @@ Time complexity: O(N)<br>
 #### 155. Min Stack (ok)
 Tag: Stack
 
+## 11.25
+### new
+
+#### 1583. Count Unhappy Friends (new)
+
+#### 924. Minimize Malware Spread (new)
+
+#### 296. Best Meeting Point (new)
+
+#### 1300. Sum of Mutated Array Closest to Target (new)
+
+#### 889. Construct Binary Tree from Preorder and Postorder Traversal
+对照：105. Construct Binary Tree from Preorder and Inorder Traversal<br>
+106. Construct Binary Tree from Inorder and Postorder Traversal<br>
+889. Construct Binary Tree from Preorder and Postorder Traversal<br>
+
+### old
+
 #### 103. Binary Tree Zigzag Level Order Traversal
 
+#### 116. Populating Next Right Pointers in Each Node
+
+#### 117. Populating Next Right Pointers in Each Node II
+
+#### 100. Same Tree
+
+#### 572. Subtree of Another Tree
 
 236	
 Lowest Common Ancestor of a Binary Tree    		47.4%	Medium	
