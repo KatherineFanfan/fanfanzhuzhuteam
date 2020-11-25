@@ -94,7 +94,7 @@ Tag: Map, Design, lined list<br>
 
 ### old
 
-#### 394. Decode String
+#### 394. Decode String (ok)
 Tag: Stack, String<br>
 一道常规老题了。需要借助两个stack，一个是number stack，一个是string stack。<br>
 number: num = num * 10 + stoi(s[i]); <br>
@@ -128,7 +128,8 @@ Solution 2: recursion 使用left and right value进行判断。注意边界条�
 #### 987. Vertical Order Traversal of a Binary Tree (ok)
 可以跟314对照起来看。唯一的区别是。对于相同的x, y值。要排序。
 #### 314. Binary Tree Vertical Order Traversal (ok)
-有点点疑问。为什么时间复杂度会是O(N)?总觉得应该是O(NlogN)
+Time complexity: O(N)<br>
+降低时间复杂度的办法：用hashmap来存储vertical value。同时保存min vertical value and max vertical value。
 
 #### 155. Min Stack (ok)
 Tag: Stack
