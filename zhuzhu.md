@@ -82,16 +82,75 @@ As the read head iterates through the column in reverse order, when the read hea
 
 #### 1300. Sum of Mutated Array Closest to Target (new)
 
-#### 1111. Maximum Nesting Depth of Two Valid Parentheses Strings
+#### 1111. Maximum Nesting Depth of Two Valid Parentheses Strings (ok)
+Tag: Greedy, String<br>
 
+#### 1145. Binary Tree Coloring Game (ok)
+Tag: Tree, DFS, BFS
+
+#### 716. Max Stack (ok)
+Tag: Map, Design, lined list<br>
+并不觉得是easy难度的题目。。。design的题目都好难啊。
 
 ### old
 
 #### 394. Decode String
+Tag: Stack, String<br>
+一道常规老题了。需要借助两个stack，一个是number stack，一个是string stack。<br>
+number: num = num * 10 + stoi(s[i]); <br>
+char: cur += s[i]; <br>
+[: numberStack.push(num); stringStack.push(cur); cur.clear(); num = 0; <br>
+]: adds = cur; time = numberStack.top(); numberStack.pop(); stringStack.top() = stringStack.top() + time * adds; cur = stringStack.top(); stringStack.pop();<br>
 
 #### 2. Add Two Numbers
 
 #### 445. Add Two Numbers II
+
+### 128. Longest Consecutive Sequence (ok)
+思路：剪枝方式（!set.count(*it - 1))进行判断。
+
+#### 1047. Remove All Adjacent Duplicates In String (ok)
+思路：stack
+#### 1209. Remove All Adjacent Duplicates in String II (ok)
+思路：运用count来计数到现在为止有多少相同的字母了。然后进行删除。
+
+#### 116. Populating Next Right Pointers in Each Node
+
+#### 117. Populating Next Right Pointers in Each Node II
+
+#### 100. Same Tree
+
+#### 572. Subtree of Another Tree
+
+#### 98. Validate Binary Search Tree (ok)
+Solution 1: inorder traversal 然后判断array是不是从小到大排序的<br>
+Solution 2: recursion 使用left and right value进行判断。注意边界条件。
+#### 987. Vertical Order Traversal of a Binary Tree (ok)
+可以跟314对照起来看。唯一的区别是。对于相同的x, y值。要排序。
+#### 314. Binary Tree Vertical Order Traversal (ok)
+有点点疑问。为什么时间复杂度会是O(N)?总觉得应该是O(NlogN)
+
+#### 155. Min Stack (ok)
+Tag: Stack
+
+#### 103. Binary Tree Zigzag Level Order Traversal
+
+
+236	
+Lowest Common Ancestor of a Binary Tree    		47.4%	Medium	
+1644	
+Lowest Common Ancestor of a Binary Tree II    		59.9%	Medium	
+1123	
+Lowest Common Ancestor of Deepest Leaves    		67.1%	Medium	
+235	
+Lowest Common Ancestor of a Binary Search Tree    		50.9%	Easy	
+1650	
+Lowest Common Ancestor of a Binary Tree III    		79.2%	Medium	
+
+
+
+
+
 
 
 
