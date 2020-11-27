@@ -130,6 +130,64 @@ Tag: Stack
 ## 11.25
 ### new
 
+#### 889. Construct Binary Tree from Preorder and Postorder Traversal (ok)
+对照：105. Construct Binary Tree from Preorder and Inorder Traversal<br>
+106. Construct Binary Tree from Inorder and Postorder Traversal<br>
+889. Construct Binary Tree from Preorder and Postorder Traversal<br>
+
+preorder: (root node) (preorder of left branch) (preorder of right branch) <br>
+inorder: (inorder of left branch) (root node) (inorder of right branch) <br>
+postorder: (postorder of left branch) (postorder of right branch) (root node) <br>
+
+889 properties: the head node of left branch is pre[1], but it occurs last in the postorder representation of the left branch.<br>
+pre[1] = post[L-1]. L = post.indexOf(pre[1]) + 1 <br>
+left branch: pre[1:L+1], post[0:L] <br>
+right branch: pre[L+1:N], post[L:N-1] <br>
+感想：好容易出错啊
+
+### old
+
+#### 105. Construct Binary Tree from Preorder and Inorder Traversal (ok)
+
+#### 106. Construct Binary Tree from Inorder and Postorder Traversal (ok)
+
+#### 103. Binary Tree Zigzag Level Order Traversal (ok)
+
+## 11.26
+### new
+#### 662. Maximum Width of Binary Tree (ok)
+#### 1586 Binary Search Tree Iterator II (ok)
+Solution: stack 存储inorder traversal(for next). vector存储prev
+#### 1382 Balance a Binary Search Tree (ok)
+#### 1650. Lowest Common Ancestor of a Binary Tree III (ok)
+Point: all values in the binary tree are unique
+
+### old
+#### 114. Flatten Binary Tree to Linked List （ok）
+#### 101. Symmetric Tree (ok)
+Solution: isMirror
+#### 199. Binary Tree Right Side View (ok)
+#### 173. Binary Search Tree Iterator (ok)
+Solution: Controlled Recursion. Behind: Inorder traversal<br>
+#### 110 Balanced Binary Tree (ok)
+#### 124. Binary Tree Maximum Path Sum (ok)
+Solution: recursion 小技巧。可以巧用一些reference value来改变状态。
+#### 236. Lowest Common Ancestor of a Binary Tree (ok)
+Solution: 当成graph来做。
+#### 235. Lowest Common Ancestor of a Binary Search Tree (ok)
+#### 572. Subtree of Another Tree (ok)
+#### 100. Same Tree (ok)
+#### 116. Populating Next Right Pointers in Each Node (ok)
+#### 117. Populating Next Right Pointers in Each Node II (ok)
+#### 200. Number of Islands (ok)
+#### 695. Max Area of Island (ok)
+
+## 11.27
+### new
+#### 1123. Lowest Common Ancestor of Deepest Leaves (new)
+#### minimum spanning tree
+#### 865. Smallest Subtree with all the Deepest Nodes
+
 #### 1583. Count Unhappy Friends (new)
 
 #### 924. Minimize Malware Spread (new)
@@ -138,35 +196,17 @@ Tag: Stack
 
 #### 1300. Sum of Mutated Array Closest to Target (new)
 
-#### 889. Construct Binary Tree from Preorder and Postorder Traversal
-对照：105. Construct Binary Tree from Preorder and Inorder Traversal<br>
-106. Construct Binary Tree from Inorder and Postorder Traversal<br>
-889. Construct Binary Tree from Preorder and Postorder Traversal<br>
-
 ### old
+#### 133. Clone Graph (ok)
 
-#### 103. Binary Tree Zigzag Level Order Traversal
+#### 305. Number of Islands II
 
-#### 116. Populating Next Right Pointers in Each Node
-
-#### 117. Populating Next Right Pointers in Each Node II
-
-#### 100. Same Tree
-
-#### 572. Subtree of Another Tree
-
-236	
-Lowest Common Ancestor of a Binary Tree    		47.4%	Medium	
-1644	
-Lowest Common Ancestor of a Binary Tree II    		59.9%	Medium	
-1123	
-Lowest Common Ancestor of Deepest Leaves    		67.1%	Medium	
-235	
-Lowest Common Ancestor of a Binary Search Tree    		50.9%	Easy	
-1650	
-Lowest Common Ancestor of a Binary Tree III    		79.2%	Medium	
-
-
+#### 694. Number of Distinct Islands
+#### 711. Number of Distinct Islands II
+#### 797. All Paths From Source to Target
+#### 62. Unique Paths
+#### 63. Unique Paths II
+#### 980. Unique Paths III
 
 
 
