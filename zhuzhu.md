@@ -184,29 +184,62 @@ Solution: 当成graph来做。
 
 ## 11.27
 ### new
-#### 1123. Lowest Common Ancestor of Deepest Leaves (new)
-#### minimum spanning tree
-#### 865. Smallest Subtree with all the Deepest Nodes
-
-#### 1583. Count Unhappy Friends (new)
-
-#### 924. Minimize Malware Spread (new)
-
-#### 296. Best Meeting Point (new)
-
-#### 1300. Sum of Mutated Array Closest to Target (new)
-
+#### 885. Spiral Matrix III (ok)
+#### 252. Meeting Rooms (ok)
 ### old
 #### 133. Clone Graph (ok)
+#### 430. Flatten a Multilevel Doubly Linked List (ok)
+Solution: Stack
+#### 146. LRU Cache (ok)
+#### 54. Spiral Matrix (ok)
+#### 59. Spiral Matrix II (ok)
+#### 139. Word Break (ok)
+#### 140. Word Break II (OK)
+#### 253. Meeting Rooms II (ok)
+Solution 1: Map
+Solution 2: sort and compare
+#### 1029. Two City Scheduling (ok)
+#### 694. Number of Distinct Islands (ok)
+#### 797. All Paths From Source to Target （OK）
+#### 62. Unique Paths (ok)
+#### 63. Unique Paths II (ok)
 
-#### 305. Number of Islands II
+## 11.28
+#### 1135. Connecting Cities With Minimum Cost (new)
+#### 305. Number of Islands II (new)
+Solution: UnionFindSet <br>
+psudo code for UnionFindSet: <br>
+```
+class UnionFindSet:
+    func UnionFindSet(n):
+        parents = [1..n]
+        ranks = [0..0] (n zeros)
+    
+    func Find(x):
+        if x != parents[x]:
+            parents[x] = Find(parents[x])
+        return parents[x]
+    
+    func Union(x, y):
+        px, py = Find(x), Find(y)
+        if ranks[px] > ranks[py]: parents[py] = px
+        if ranks[px] < ranks[py]: parents[px] = py
+        if ranks[px] == ranks[py]:
+            parents[py] = px
+            ranks[px]++
+```
+#### 980. Unique Paths III (new)
+#### 711. Number of Distinct Islands II (new)
+Solution: dfs + canonical hash。很没必要了。
+#### 1123. Lowest Common Ancestor of Deepest Leaves (new)
+#### 865. Smallest Subtree with all the Deepest Nodes
+#### 1583. Count Unhappy Friends (new)
+#### 924. Minimize Malware Spread (new)
+#### 296. Best Meeting Point (new)
+#### 1300. Sum of Mutated Array Closest to Target (new)
 
-#### 694. Number of Distinct Islands
-#### 711. Number of Distinct Islands II
-#### 797. All Paths From Source to Target
-#### 62. Unique Paths
-#### 63. Unique Paths II
-#### 980. Unique Paths III
+
+
 
 
 
