@@ -205,8 +205,10 @@ Solution 2: sort and compare
 #### 63. Unique Paths II (ok)
 
 ## 11.28
-#### 1135. Connecting Cities With Minimum Cost (new)
-#### 305. Number of Islands II (new)
+#### 1135. Connecting Cities With Minimum Cost (ok)
+Solution 1: Prim<br>
+Solution 2: Krustal
+#### 305. Number of Islands II (ok)
 Solution: UnionFindSet <br>
 psudo code for UnionFindSet: <br>
 ```
@@ -228,6 +230,22 @@ class UnionFindSet:
             parents[py] = px
             ranks[px]++
 ```
+### old
+#### 242. Valid Anagram (ok)
+#### 78. Subsets (ok)
+#### 90. Subsets II (ok)
+#### 46. Permutations (ok)
+#### 47. Permutations II (ok)
+```
+            if (i != 0 && nums_[i-1] == nums_[i] && visited[i - 1] == false){
+                continue;
+            }
+```
+## 11.29
+#### 39. Combination Sum
+#### 40. Combination Sum II
+#### 131. Palindrome Partitioning
+
 #### 980. Unique Paths III (new)
 #### 711. Number of Distinct Islands II (new)
 Solution: dfs + canonical hash。很没必要了。
