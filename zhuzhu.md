@@ -110,7 +110,7 @@ Solution 2: do not reverse the input. 1. sum the corresponding positions and bui
 ### 128. Longest Consecutive Sequence (ok)
 思路：剪枝方式（!set.count(*it - 1))进行判断。
 
-#### 1047. Remove All Adjacent Duplicates In String (ok)
+#### 1047 . Remove All Adjacent Duplicates In String (ok)
 思路：stack
 #### 1209. Remove All Adjacent Duplicates in String II (ok)
 思路：运用count来计数到现在为止有多少相同的字母了。然后进行删除。
@@ -242,9 +242,26 @@ class UnionFindSet:
             }
 ```
 ## 11.29
-#### 39. Combination Sum
-#### 40. Combination Sum II
-#### 131. Palindrome Partitioning
+### new
+#### 264. Ugly Number II (ok)
+#### 216. Combination Sum III (ok)
+### old
+#### 39. Combination Sum (ok)
+#### 40. Combination Sum II (ok)
+#### 131. Palindrome Partitioning (ok)
+#### 5. Longest Palindromic Substring (ok)
+Solution: Dynamic Programming<br>
+Base: P[i, i] = true, P[i, i+1] = (s[i] == s[i + 1]) <br>
+p[i, j] = p[i + 1, j - 1] and s[i] == s[j]
+#### 1274. Number of Ships in a Rectangle （ok）
+#### 7. Reverse Integer (ok)
+#### 1. Two Sum (ok)
+#### 283. Move Zeroes (ok)
+感想： 学习了candy crush里面的写法。觉得非常的巧妙。应用到这道题里面之后写的更加精妙了。
+#### 451. Sort Characters By Frequency(ok)
+#### 611. Valid Triangle Number (ok)
+
+
 
 #### 980. Unique Paths III (new)
 #### 711. Number of Distinct Islands II (new)
